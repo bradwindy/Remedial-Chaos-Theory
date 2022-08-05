@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "testpackage",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/bradwindy/TestPackage.git",
+      "state" : {
+        "revision" : "dd5760e17906e7af15493064592afd93cb5eaeb1",
+        "version" : "1.0.2"
+      }
+    }
+  ],
+  "version" : 2
+}

@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C5D4DF0289C94E900C1C4C7 /* TestPackage in Frameworks */ = {isa = PBXBuildFile; productRef = 1C5D4DEF289C94E900C1C4C7 /* TestPackage */; };
 		1C6B9E0C289C884B000B1E86 /* Remedial_Chaos_TheoryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6B9E0B289C884B000B1E86 /* Remedial_Chaos_TheoryApp.swift */; };
 		1C6B9E0E289C884B000B1E86 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6B9E0D289C884B000B1E86 /* ContentView.swift */; };
 		1C6B9E10289C884D000B1E86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C6B9E0F289C884D000B1E86 /* Assets.xcassets */; };
 		1C6B9E13289C884D000B1E86 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C6B9E12289C884D000B1E86 /* Preview Assets.xcassets */; };
+		1C6B9E1A289C8B4C000B1E86 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6B9E19289C8B4C000B1E86 /* ContentViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,7 @@
 		1C6B9E0D289C884B000B1E86 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1C6B9E0F289C884D000B1E86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1C6B9E12289C884D000B1E86 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1C6B9E19289C8B4C000B1E86 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C5D4DF0289C94E900C1C4C7 /* TestPackage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +57,7 @@
 			children = (
 				1C6B9E0B289C884B000B1E86 /* Remedial_Chaos_TheoryApp.swift */,
 				1C6B9E0D289C884B000B1E86 /* ContentView.swift */,
+				1C6B9E19289C8B4C000B1E86 /* ContentViewModel.swift */,
 				1C6B9E0F289C884D000B1E86 /* Assets.xcassets */,
 				1C6B9E11289C884D000B1E86 /* Preview Content */,
 			);
@@ -83,6 +88,9 @@
 			dependencies = (
 			);
 			name = "Remedial Chaos Theory";
+			packageProductDependencies = (
+				1C5D4DEF289C94E900C1C4C7 /* TestPackage */,
+			);
 			productName = "Remedial Chaos Theory";
 			productReference = 1C6B9E08289C884B000B1E86 /* Remedial Chaos Theory.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,9 @@
 				Base,
 			);
 			mainGroup = 1C6B9DFF289C884B000B1E86;
+			packageReferences = (
+				1C5D4DEE289C94E900C1C4C7 /* XCRemoteSwiftPackageReference "TestPackage" */,
+			);
 			productRefGroup = 1C6B9E09289C884B000B1E86 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,6 +150,7 @@
 			files = (
 				1C6B9E0E289C884B000B1E86 /* ContentView.swift in Sources */,
 				1C6B9E0C289C884B000B1E86 /* Remedial_Chaos_TheoryApp.swift in Sources */,
+				1C6B9E1A289C8B4C000B1E86 /* ContentViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +351,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1C5D4DEE289C94E900C1C4C7 /* XCRemoteSwiftPackageReference "TestPackage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/bradwindy/TestPackage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1C5D4DEF289C94E900C1C4C7 /* TestPackage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1C5D4DEE289C94E900C1C4C7 /* XCRemoteSwiftPackageReference "TestPackage" */;
+			productName = TestPackage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1C6B9E00289C884B000B1E86 /* Project object */;
 }

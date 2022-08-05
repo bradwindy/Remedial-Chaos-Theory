@@ -6,12 +6,22 @@
 //
 
 import SwiftUI
+import TestPackage
 
 struct ContentView: View {
+    // MARK: Internal
+
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack {
+            Text(viewModel.title)
+                .padding()
+            BigRedButton()
+        }
     }
+
+    // MARK: Private
+
+    @StateObject private var viewModel = ContentViewModel()
 }
 
 struct ContentView_Previews: PreviewProvider {
